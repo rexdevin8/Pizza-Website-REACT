@@ -1,0 +1,158 @@
+.navbar {
+    display: flex;
+    position: sticky; top: 0;
+    z-index: 10;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+.leftSide img {
+    position: absolute;
+    padding-top: 9px;
+    padding-left: 5px;
+    padding-bottom: 9px;
+    padding-right: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 5%;
+    left: 20px;
+    top: 15px;
+    width: 70px;
+}
+
+
+.rightSide {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.rightSide a {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid transparent;
+    color:azure;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightSide a:hover {
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.burger-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+  }
+
+.hidden-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+}
+
+.navbar #open{
+  padding-left: 100px;
+  margin-right: 50px;
+}
+
+.navbar #close .hidden-links{
+  display: none;
+}
+
+.navbar #open .hidden-links {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+}
+.navbar #open .hidden-links a {
+    display: flex;
+    position: relative;
+    left: 45px;
+    top: 25px;
+    margin-right: 15px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid transparent;
+    color:azure;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar #open a:hover {
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar .rightSide a {
+      display: none;
+    }
+  
+    .navbar .rightSide {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .navbar .rightSide button {
+      display: inherit;
+    }
+
+    .leftSide img{
+      display: none;
+    }
+
+    .burger-btn{
+      display: flex;
+      position: relative;
+      left: 60px;
+  }
+
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .hidden-links{
+        display: none;
+    }
+
+    .burger-btn{
+        display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+
+    .navbar #open .hidden-links a {
+      display: none;
+    }
+    
+  }
+  
